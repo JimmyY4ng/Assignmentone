@@ -1,0 +1,21 @@
+body{
+    background-color: #EDDDD0;
+}
+
+
+
+
+
+
+
+.clgn {
+    text-align: center;
+} 
+
+
+.content-list{
+    list-style-type: none;
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
