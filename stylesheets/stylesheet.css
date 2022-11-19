@@ -19,10 +19,18 @@ body{
 
 .mynotes {
     margin-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+    color:#55869b;
 }
 
 .notes {
     list-style-type: square;
+}
+
+.notes a {
+    text-decoration: none;
+    color:#55869b;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .TButton {
@@ -43,6 +51,7 @@ body{
     font-size: 1rem;
     text-align: center;
     color: white;
+    background-color: #5394A0;
     border-radius: 10px;
 }
 
@@ -54,6 +63,7 @@ body{
     font-size: 1rem;
     text-align: center;
     color: white;
+    background-color: #D9827C;
     border-radius: 10px;
 }
 
@@ -68,6 +78,8 @@ body{
     border-radius: 10px;
     margin-bottom: 5px;
     margin-right: auto;
+    color: white;
+    background-color: #5394A0;
 }
 
 .DkMd {
@@ -79,6 +91,8 @@ body{
     border: 0;
     border-radius: 10px;
     margin-bottom: 5px;
+    color: white;
+    background-color: #6F6A87;
     
 }
 
@@ -93,14 +107,21 @@ textarea {
     border: 4px solid; 
     margin-top: 5px;
     width: 98%;
+    background-color:#F9F3EC;
+    border: 4px solid cornflowerblue;
 }
 
 .AbDoc {
     display: flex;
     justify-content:space-around;
     justify-content: end;
-    gap:8px
-    
+    gap:8px  
+}
+
+.AbDoc a {
+    font-family: 'Roboto Mono', monospace;
+    color:#55869b;
+    text-decoration: none;
 }
 
 
@@ -108,6 +129,8 @@ textarea {
 
 .clgn {
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color:#55869b;
 } 
 
 
@@ -116,6 +139,8 @@ textarea {
     padding:0;
     display: flex;
     justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    color:#55869b;
 }
 
 @media screen and (max-width:600px) {
@@ -126,17 +151,6 @@ textarea {
     body {
         background: #EDDDD0 100%;
     }
-    textarea {
-        height: 300px;
-        border: 4px solid; 
-        margin-top: 5px;
-        width: 98%;
-    }
+   
 }
 
-.whatever {
-   background-color: #5394A0;
-   background-color: #D9827C;
-   background-color: #6F6A87;
-   color:#55869b;
-}
