@@ -1,42 +1,84 @@
 body{
     background-color: #EDDDD0;
+    width: 100%;
+    min-height: 100vh;
+     background: linear-gradient(
+      to right,
+      #F9F3EC 18%,
+      #EDDDD0 0%,
+      #EDDDD0 100%
+    ) 
 }
 
 .mainc {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: repeat(1fr 2fr);
+    
 }
 
+.mynotes {
+    margin-left: 10px;
+}
+
+.notes {
+    list-style-type: square;
+}
 
 .TButton {
     display:flex;
-    justify-content: end;
+}
+
+.BButton {
+    display:flex;
+    gap: 5px;
+    margin-left: auto
+}
+
+.snt {
+    width: 80px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.ccnt {
+    width: 80px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
 }
 
 
 .Nnt {
     width: 120px;
-    float: right;
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 5px;
+    margin-right: auto;
 }
 
 .DkMd {
     text-align: center;
-    float: right;
     line-height: 2.5;
     width: 120px;
     right: 10px;
-    margin-bottom: 5px;
-    margin-right: auto;
     padding:0 20px;
     border: 0;
     border-radius: 10px;
+    margin-bottom: 5px;
     
 }
 
@@ -47,14 +89,19 @@ body{
 
 
 textarea {
-   
     height: 300px;
     border: 4px solid; 
     margin-top: 5px;
     width: 98%;
 }
 
-
+.AbDoc {
+    display: flex;
+    justify-content:space-around;
+    justify-content: end;
+    gap:8px
+    
+}
 
 
 
@@ -69,4 +116,27 @@ textarea {
     padding:0;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+    .mainc {
+        grid-template-rows: repeat(1fr, 2fr);
+        grid-template-columns: 100%;
+    }
+    body {
+        background: #EDDDD0 100%;
+    }
+    textarea {
+        height: 300px;
+        border: 4px solid; 
+        margin-top: 5px;
+        width: 98%;
+    }
+}
+
+.whatever {
+   background-color: #5394A0;
+   background-color: #D9827C;
+   background-color: #6F6A87;
+   color:#55869b;
 }
