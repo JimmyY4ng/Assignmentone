@@ -179,3 +179,12 @@ body.dark {
     ) 
 }
 
+textarea.dark {
+    height: 300px;
+    border: 4px solid; 
+    margin-top: 5px;
+    width: 98%;
+    background-color:black;
+    border: 4px solid cornflowerblue;
+}
+
